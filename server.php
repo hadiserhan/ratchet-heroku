@@ -9,7 +9,7 @@ require 'vendor/autoload.php';
 
 $allow = ['localhost', getenv('DOMAIN')];
 
-$server = new App('localhost', 3000);
+$server = new App('testhadisocket.herokuapp.com', 3000);
 
 //$server->route('/wamp', new Wamp(), $allow);
 //$server->route('/echo', new EchoServer(), $allow);
