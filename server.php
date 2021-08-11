@@ -11,8 +11,8 @@ $allow = ['localhost', getenv('DOMAIN')];
 
 $server = new App('localhost', 3000);
 
-$server->route('/wamp', new Wamp(), $allow);
-$server->route('/echo', new EchoServer(), $allow);
+//$server->route('/wamp', new Wamp(), $allow);
+//$server->route('/echo', new EchoServer(), $allow);
 $server->route('/socket', new Socket(), $allow);
 
 $server->run();
